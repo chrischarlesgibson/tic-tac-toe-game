@@ -54,10 +54,24 @@
 
                 foreach (char playerChar in playerChars)
                 {
-                    if (((playField[0,0] ==playerChar) && (playField[0,1]== playerChar)&& (playField[0, 2] == playerChar)))
+                    if (((playField[0,0] ==playerChar) && (playField[0,1]== playerChar)&& (playField[0, 2] == playerChar))
+                        || ((playField[1, 0] == playerChar) && (playField[1, 1] == playerChar) && (playField[1, 2] == playerChar))
+                        || ((playField[2, 0] == playerChar) && (playField[2, 1] == playerChar) && (playField[2, 2] == playerChar))
+                        || ((playField[0, 0] == playerChar) && (playField[1, 0] == playerChar) && (playField[2, 0] == playerChar))
+                        || ((playField[0, 1] == playerChar) && (playField[1, 1] == playerChar) && (playField[1, 2] == playerChar))
+                        || ((playField[0, 2] == playerChar) && (playField[2, 1] == playerChar) && (playField[2, 2] == playerChar))
+                        || ((playField[0, 0] == playerChar) && (playField[1, 1] == playerChar) && (playField[2, 2] == playerChar))
+                        || ((playField[0, 2] == playerChar) && (playField[1, 1] == playerChar) && (playField[2, 0] == playerChar)))
                     {
-                        Console.WriteLine("we have a winner");
+
+
+                        if (playerChar == 'X')
+                        {
+                            Console.WriteLine("player 1 has won");
+                        }else
+                            Console.WriteLine("player 2 has won");
                     }
+                    break;
                 }
 
                 #endregion
