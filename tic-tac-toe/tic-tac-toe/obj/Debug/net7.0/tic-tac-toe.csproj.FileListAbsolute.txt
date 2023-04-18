@@ -1,0 +1,15 @@
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/bin/Debug/net7.0/tic-tac-toe
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/bin/Debug/net7.0/tic-tac-toe.deps.json
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/bin/Debug/net7.0/tic-tac-toe.runtimeconfig.json
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/bin/Debug/net7.0/tic-tac-toe.dll
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/bin/Debug/net7.0/tic-tac-toe.pdb
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/obj/Debug/net7.0/tic-tac-toe.csproj.AssemblyReference.cache
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/obj/Debug/net7.0/tic-tac-toe.GeneratedMSBuildEditorConfig.editorconfig
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/obj/Debug/net7.0/tic-tac-toe.AssemblyInfoInputs.cache
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/obj/Debug/net7.0/tic-tac-toe.AssemblyInfo.cs
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/obj/Debug/net7.0/tic-tac-toe.csproj.CoreCompileInputs.cache
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/obj/Debug/net7.0/tic-tac-toe.dll
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/obj/Debug/net7.0/refint/tic-tac-toe.dll
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/obj/Debug/net7.0/tic-tac-toe.pdb
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/obj/Debug/net7.0/tic-tac-toe.genruntimeconfig.cache
+/Users/chrisgibson/Projects/tic-tac-toe-game/tic-tac-toe/tic-tac-toe/obj/Debug/net7.0/ref/tic-tac-toe.dll
