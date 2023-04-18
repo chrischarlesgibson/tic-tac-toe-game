@@ -14,18 +14,22 @@
 
         static void Main(string[] args)
         {
-            int player = 2;//player 1 starts
+            int player = 1;//player 1 starts
             int input = 0;
             bool inputCorrect = true;
 
-            SetField();
-            Console.ReadKey();
+           
+
 
 
 
             //run code as long as program runs
             do
             {
+
+
+
+
                 if (player == 2)
                 {
 
@@ -40,19 +44,88 @@
                     EnterXorO(player, input);
                 }
 
+
+                SetField();
+                #region
+
+                //check winner
+
+                char[] playerChars = { 'X', 'O' };
+
+                foreach (char playerChar in playerChars)
+                {
+                    if (((playField[0,0] ==playerChar) && (playField[0,1]== playerChar)&& (playField[0, 2] == playerChar)))
+                    {
+                        Console.WriteLine("we have a winner");
+                    }
+                }
+
+                #endregion
+                #region
+                //region- test if field is already taken
                 do
                 {
                     Console.Write($"\nPlayer {player}: Choose your field!");
-                    input = Convert.ToInt32(Console.ReadLine());
+                    try
+                    {
+                        input = Convert.ToInt32(Console.ReadLine());
+                    }
+                    catch 
+                    {
+                        Console.WriteLine("please enter a number");
+                    }
+
+
+                    if((input ==1) && (playField[0,0] == '1'))
+                    {
+                        inputCorrect = true; 
+                    } else if ((input == 2) && (playField[0, 1] == '2')){
+                        inputCorrect = true;
+                    }
+                    else if ((input == 3) && (playField[0, 2] == '3'))
+                    {
+                        inputCorrect = true;
+                    }
+                    else if ((input == 4) && (playField[1, 0] == '4'))
+                    {
+                        inputCorrect = true;
+                    }
+                    else if ((input == 5) && (playField[1, 1] == '5'))
+                    {
+                        inputCorrect = true;
+                    }
+                    else if ((input == 6) && (playField[1, 2] == '6'))
+                    {
+                        inputCorrect = true;
+                    }
+                    else if ((input == 7) && (playField[2, 0] == '7'))
+                    {
+                        inputCorrect = true;
+                    }
+                    else if ((input == 8) && (playField[2, 1] == '8'))
+                    {
+                        inputCorrect = true;
+                    }
+                    else if ((input == 9) && (playField[2, 2] == '9'))
+                    {
+                        inputCorrect = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("\n Incorrect input. Please use another field");
+                        inputCorrect = false;
+                    }
+
 
                 } while (!inputCorrect);
-                
-                
+                #endregion
+
             } while (true);
         }
 
         public static void SetField()
         {
+            Console.Clear();
             Console.WriteLine("     |     |     ");
             Console.WriteLine("  {0}  |  {1}  |  {2}", playField[0,0] , playField[0, 1],playField[0, 2]);//row0, 
             Console.WriteLine("_____|_____|_____");
@@ -73,10 +146,10 @@
 
             if(player== 1)
             {
-                playerSign = 'x';
-            } else if (playerSign == 2)
+                playerSign = 'X';
+            } else if (player == 2)
             {
-                playerSign = '0';
+                playerSign = 'O';
             }
 
             switch (input)
